@@ -1,0 +1,108 @@
+
+.portfolio .conteiner {
+    padding-bottom: 100px;
+    padding-top: 85px;
+}
+
+.portfolio-title, .project-title {
+    display: none;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-btn {
+    background-color: var(--background-color-grey);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic) ;
+    &:hover, &:focus {
+        background-color: var(--acent-color);
+        color: var(--acent-color-background-text);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+}
+
+
+.portfolio-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.project-item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item-link {
+    display: block;
+    box-shadow: none;
+    transition: box-shadow 250ms var(--cubic);
+    &:hover, &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:  var(--second-color-text);
+}
+
+.card-border {
+    padding: 20px 24px;
+    border: 1px;
+    border: 1px solid #EEEEEE;
+}
+.project-img-box {
+    position: relative;
+    overflow: hidden;
+}
+.project-scripture {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(33, 150, 243, 0.9);
+    padding-top: 63px;
+    padding-left: 24px;
+    color: var(--acent-color-background-text);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic);
+    .project-item-link:hover &, .project-item-link:focus & {
+        transform: translateY(0%);   
+    }
+}
+
+.project-kind {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--first-color-text);
+}

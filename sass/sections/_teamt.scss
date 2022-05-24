@@ -1,0 +1,89 @@
+.teamt {
+    background-color: var(--background-color-grey);
+    padding: 94px 0px;
+}
+
+.teamt .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.teamt-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text); 
+    margin-bottom: 50px;
+}
+.teamt-list {
+    display: flex;
+    margin-left: -30px;
+
+}
+.teamt-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+    margin-bottom: 10px;
+}
+
+.teamt-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.teamt-item {
+    background-color: var(--acent-color-background-text);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+
+.teamt-foto {
+    margin-bottom: 30px;
+}
+.team-soc-connect {
+    display: flex;
+    justify-content: center;
+
+}
+.team-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--acent-color-background-text);
+    border-radius: 50%;
+    transition: background-color 250ms var(--cubic);
+    &:hover, &:focus {
+        background-color: var(--acent-color);
+    }
+}
+
+.team-soc-logo {
+    fill: var(--background-color-logo);
+    transition: fill 250ms var(--cubic);
+    .team-soc-link:hover &, .team-soc-link:focus & {
+        fill: var(--acent-color-background-text);
+    }
+}
+
+.team-soc-ikon:not(:last-child) {
+    margin-right: 10px;
+}

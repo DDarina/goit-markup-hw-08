@@ -1,0 +1,91 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+    .conteiner {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14x;
+    letter-spacing: 0.02em;
+    color: var(--second-color-text);
+    transition: color 250ms var(--cubic);
+    &:hover {
+        color: var(--acent-color);
+    }
+    &:focus {
+        color: var(--acent-color);
+    }
+
+}
+
+.header-pages {
+    margin-left: 93px;
+    display: flex;
+    .link.current { 
+        color: var(--acent-color);
+        position: relative;
+    }
+}
+
+.contact-block {
+    display: flex;
+    justify-self:center;
+}
+
+.header-contact {
+    display: flex;
+    margin-left: 215px;
+}
+
+.header-contact__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+    color: var(--first-color-text);
+    transition: color 250ms var(--cubic);
+    &:hover {
+        color: var(--acent-color);
+    }
+    &:focus {
+        color: var(--acent-color);
+    }
+    & mail {
+        margin-right: 50px;
+    }
+}
+  
+
+
+
+.header-pages__item:not(:last-child) {
+margin-right: 50px;
+}
+
+
+
+.header-contact__icon {
+    fill: var(--background-color-logo);
+    margin-right: 10px;
+    transition: fill 250ms var(--cubic);
+    .header-contact__item:hover & {
+        fill: var(--acent-color);
+    }
+    .header-contact__item:focus & {
+        fill: var(--acent-color);
+    }
+}
+

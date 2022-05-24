@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', Montserrat, sans-serif;
+    color: var(--first-color-text);
+    background-color: var(--acent-color-background-text);
+}
+
+
+
+img {
+display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ textarea {
+    resize: none;
+ }
+.conteiner {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+.current::after {
+    position: absolute;
+    top: 260%;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--acent-color) ;
+    border-radius: 2px;
+}
+

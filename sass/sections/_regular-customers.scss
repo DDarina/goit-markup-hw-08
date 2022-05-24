@@ -1,0 +1,41 @@
+.regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-customers-header {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+}
+.regular-customers-ul {
+    display: flex;
+}
+
+.regular-custom-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.regular-custom-box {
+    display: block;
+    padding: 16px 32px;
+    border: 1px solid var(--background-color-logo);
+    border-radius: 4px;
+    transition:  border 250ms var(--cubic) ;
+    &:hover, &:focus{
+        border: 1px solid var(--acent-color);
+        border-radius: 4px;
+    }
+}
+
+.regular-custom-icon {
+    fill: var(--background-color-logo);
+    transition: fill 250ms var(--cubic) ;
+    .regular-custom-box:hover &, .regular-custom-box:focus &  {
+        fill: var(--acent-color);
+    }
+}
