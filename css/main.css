@@ -46,7 +46,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -263,13 +263,14 @@ ul, ol {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .benefits-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    width: 1200px;
   }
 }
 
@@ -286,6 +287,11 @@ ul, ol {
     margin-right: 30px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .benefits-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .benefits-img {
   display: flex;
@@ -295,6 +301,11 @@ ul, ol {
   background-color: var(--background-color-grey);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .benefits-img {
+    width: 270px;
+  }
 }
 
 .benefits-title {
@@ -325,6 +336,11 @@ ul, ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  .our-work {
+    display: none;
+  }
 }
 
 .our-work-item:not(:last-child) {
