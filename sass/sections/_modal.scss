@@ -13,10 +13,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-    width: 528px;
+    max-width: calc(100% - 10px);
     min-height: 528px;
     background-color: var(--acent-color-background-text);
     transition: transform 250ms; 
+    @media only screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 528px;
+    }
     .backdrop.is-hidden  & {
         transform: rotateZ(180deg);
     }
@@ -60,6 +64,14 @@
 
 .modal-form {
     padding: 40px;
+    max-width: calc(100% - 10px);
+    @media only screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media only screen and (min-width: 1200px) {
+    width: 520px;
+    }
+    
 }
 
 .modal-form-header {
@@ -89,11 +101,14 @@
 } 
 
 .modal-checkbox {
-    margin-left: 16px;
+    
     position: relative;
     margin-top: 20px;
     &:hover .contract-text {
         color: var(--acent-color);
+    }
+    @media only screen and (min-width: 1200px) {
+        margin-left: 16px;
     }
 }
 
@@ -108,12 +123,15 @@
 }
 
 .contract {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--acent-color);
+    @media only screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7
+    }
 }
 
 
@@ -131,6 +149,7 @@
         border: 2px solid var(--second-color-text);
         border-radius: 3px;
         transition: border 250ms var(--cubic); 
+        
     }
     &:focus-within .contract-text {
         color: var(--acent-color);
@@ -146,11 +165,15 @@
 
 .contract-text {
     padding-left: 5px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--first-color-text);
     transition: color 250ms var(--cubic);
+    @media only screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7
+    }
 }
 
 .checkbox:checked ~ .checkbox-label::after {

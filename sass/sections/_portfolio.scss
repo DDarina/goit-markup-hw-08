@@ -1,7 +1,11 @@
 
 .portfolio .conteiner {
+    padding-bottom: 60px;
+    padding-top: 60px;
+@media only screen and (min-width: 1200px) {
     padding-bottom: 100px;
     padding-top: 85px;
+}
 }
 
 .portfolio-title, .project-title {
@@ -10,8 +14,18 @@
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 25px;
+    }
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+    @media only screen and (min-width: 1200px) {
     justify-content: center;
+    flex-wrap: nowrap;
     margin-bottom: 50px;
+    }
 }
 
 .portfolio-btn {
@@ -36,22 +50,39 @@
 }
 
 
-.portfolio-item:not(:last-child){
+.portfolio-item {
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 15px; 
+     
+     }
+&:not(:last-child){
     margin-right: 8px;
 }
+}
+
 
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
+    
     margin-left: -30px;
     margin-bottom: -30px;
+    @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+
 }
 
 .project-item {
-    width: calc(100% / 3 - 30px);
+    max-width: 100%;
     margin-left: 30px;
     margin-bottom: 30px;
+    @media only screen and (min-width: 768px) {
+        width: calc(50% - 30px);
+    }
+@media only screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+}
 }
 
 .project-item-link {
@@ -80,6 +111,10 @@
 .project-img-box {
     position: relative;
     overflow: hidden;
+}
+.project-img {
+    width: 100%;
+    
 }
 .project-scripture {
     position: absolute;
