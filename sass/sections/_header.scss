@@ -130,7 +130,7 @@ margin-right: 50px;
     }
 }
 
-.mob-menu {
+.mob-menu-open {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -142,7 +142,6 @@ margin-right: 50px;
     align-items: center;
     background: #FFFFFF;
     border: none;
-    border-radius: 50%;
     &:hover, &:focus {
         cursor: pointer;
     }
@@ -152,7 +151,7 @@ margin-right: 50px;
     &__icon {
         fill: #000000;
         transition: fill 250ms var(--cubic);
-        .mob-menu:hover & {
+        .mob-menu-open:hover & {
             fill: var(--acent-color);
         }
     }

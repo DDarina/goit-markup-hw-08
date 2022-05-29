@@ -62,14 +62,19 @@ ul, ol {
 }
 
 .current::after {
-  position: absolute;
-  top: 285%;
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: var(--acent-color);
-  border-radius: 2px;
+  display: none;
+}
+@media only screen and (min-width: 786px) {
+  .current::after {
+    position: absolute;
+    top: 285%;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--acent-color);
+    border-radius: 2px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .current::after {
@@ -241,7 +246,7 @@ ul, ol {
   fill: var(--acent-color);
 }
 
-.mob-menu {
+.mob-menu-open {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -253,21 +258,20 @@ ul, ol {
   align-items: center;
   background: #FFFFFF;
   border: none;
-  border-radius: 50%;
 }
-.mob-menu:hover, .mob-menu:focus {
+.mob-menu-open:hover, .mob-menu-open:focus {
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
-  .mob-menu {
+  .mob-menu-open {
     display: none;
   }
 }
-.mob-menu__icon {
+.mob-menu-open__icon {
   fill: #000000;
   transition: fill 250ms var(--cubic);
 }
-.mob-menu:hover .mob-menu__icon {
+.mob-menu-open:hover .mob-menu-open__icon {
   fill: var(--acent-color);
 }
 
@@ -1329,4 +1333,144 @@ ul, ol {
 .footer-form__icon {
   fill: var(--acent-color-background-text);
   margin-left: 10px;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding-left: 40px;
+  padding-top: 48px;
+  background-color: var(--acent-color-background-text);
+}
+@media only screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu__link.current {
+  color: var(--acent-color);
+  position: relative;
+}
+
+.mob-menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: none;
+}
+.mob-menu-close:hover, .mob-menu-close:focus {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .mob-menu-close {
+    display: none;
+  }
+}
+.mob-menu-close__icon {
+  fill: #000000;
+  transition: fill 250ms var(--cubic);
+}
+.mob-menu-close:hover .mob-menu-close__icon {
+  fill: var(--acent-color);
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--first-color-text);
+  transition: color 250ms var(--cubic);
+}
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-menu__item:hover {
+  color: var(--acent-color);
+}
+.mob-menu__item:focus {
+  color: var(--acent-color);
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-color-text);
+  transition: color 250ms var(--cubic);
+}
+.mob-menu__link:hover {
+  color: var(--acent-color);
+}
+.mob-menu__link:focus {
+  color: var(--acent-color);
+}
+
+.mob-menu-contact {
+  margin-top: 300px;
+}
+.mob-menu-contact__item.tel {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+}
+.mob-menu-contact__item.mail {
+  display: inline-block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--first-color-text);
+  transition: color 250ms var(--cubic);
+}
+.mob-menu-contact__item.mail:hover {
+  color: var(--acent-color);
+}
+
+.mob-soc {
+  max-width: 100%;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+}
+.mob-soc__link:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-soc__link:not(:first-child) {
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */

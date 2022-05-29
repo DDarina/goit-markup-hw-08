@@ -47,14 +47,17 @@ ul, ol {
 }
 
 .current::after {
-    position: absolute;
-    top: 285%;
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: var(--acent-color) ;
-    border-radius: 2px;
+display: none;
+    @media only screen and (min-width: 786px) {
+        position: absolute;
+        top: 285%;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: var(--acent-color) ;
+        border-radius: 2px;
+    }
     @media only screen and (min-width: 1200px) {
         top: 260%;
     }
