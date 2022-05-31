@@ -1344,18 +1344,22 @@ ul, ol {
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
-  padding-left: 40px;
-  padding-top: 48px;
+  padding-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 20px;
   background-color: var(--acent-color-background-text);
+}
+@media only screen and (min-width: 480px) {
+  .mob-menu {
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 .is-hidden {
@@ -1364,7 +1368,7 @@ ul, ol {
   visibility: hidden;
 }
 
-.mob-menu__link.current {
+.mob-menu__link.link.current {
   color: var(--acent-color);
   position: relative;
 }
@@ -1418,8 +1422,8 @@ ul, ol {
 
 .mob-menu__link {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-color-text);
@@ -1431,6 +1435,12 @@ ul, ol {
 .mob-menu__link:focus {
   color: var(--acent-color);
 }
+@media only screen and (min-width: 480px) {
+  .mob-menu__link {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+}
 
 .mob-menu-contact {
   margin-top: 300px;
@@ -1439,20 +1449,32 @@ ul, ol {
   display: inline-block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--acent-color);
+}
+@media only screen and (min-width: 480px) {
+  .mob-menu-contact__item.tel {
+    font-size: 34px;
+    line-height: 1.17;
+  }
 }
 .mob-menu-contact__item.mail {
   display: inline-block;
   margin-bottom: 64px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--first-color-text);
   transition: color 250ms var(--cubic);
+}
+@media only screen and (min-width: 480px) {
+  .mob-menu-contact__item.mail {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 .mob-menu-contact__item.mail:hover {
   color: var(--acent-color);
@@ -1462,15 +1484,31 @@ ul, ol {
   max-width: 100%;
   display: inline-flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 16px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--acent-color);
 }
+@media only screen and (min-width: 480px) {
+  .mob-soc {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 .mob-soc__link:not(:last-child) {
-  padding-right: 10px;
+  padding-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+@media only screen and (min-width: 480px) {
+  .mob-soc__link:not(:last-child) {
+    padding-right: 10px;
+  }
+}
 .mob-soc__link:not(:first-child) {
-  padding-left: 10px;
+  padding-left: 5px;
+}
+@media only screen and (min-width: minwidthpx) {
+  .mob-soc__link:not(:first-child) {
+    padding-left: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
