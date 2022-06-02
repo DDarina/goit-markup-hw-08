@@ -12,6 +12,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: 93px;
     transform: translate(-50%,-50%) scale(1);
     max-width: calc(100% - 10px);
     min-height: 528px;
@@ -120,7 +121,7 @@
 
 .contract {
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--acent-color);
@@ -163,7 +164,7 @@
     padding-left: 5px;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     color: var(--first-color-text);
     transition: color 250ms var(--cubic);
     @media only screen and (min-width: 1200px) {
