@@ -765,8 +765,10 @@ ul, ol {
   overflow: hidden;
 }
 
-.another-height {
-  padding-bottom: 56px;
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .another-height {
+    padding-bottom: 56px;
+  }
 }
 
 .project-img {
