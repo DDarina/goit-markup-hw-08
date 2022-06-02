@@ -42,15 +42,15 @@
                     </a>
                 </li>
             </ul>
-            <button type="button" class="mob-menu-open" openMenuBtn>
+            <button type="button" class="mob-menu-open">
                 <svg class="mob-menu-open__icon"  width="40" height="40">
                     <use href="./images/icons.svg#icon-menu_40px"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu is-hidden no-scroll"  menu>
+        <div class="mob-menu is-hidden no-scroll">
             <div class="container">
-                <button class="mob-menu-close" closeMenuBtn>
+                <button class="mob-menu-close">
                     <svg class="mob-menu-close__icon"  width="40" height="40">
                         <use href="./images/icons.svg#icon-close_40px"></use>
                     </svg>
@@ -75,10 +75,15 @@
                     </li>
                 </ul>
                 <ul class="mob-soc">
-                    <li class="mob-soc__link list" target="_blank" rel="noopener noreferrer nofollow">Instagram</li>
-                    <li class="mob-soc__link list" target="_blank" rel="noopener noreferrer nofollow">Twitter</li>
-                    <li class="mob-soc__link list" target="_blank" rel="noopener noreferrer nofollow">Facebook</li>
-                    <li class="mob-soc__link list" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</li>
+                    <li class="mob-soc__list list">
+                        <a class="mob-soc__link link" href="./" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="mob-soc__list list">
+                        <a class="mob-soc__link link " href="./" target="_blank" rel="noopener noreferrer nofollow">Twitter</a></li>
+                    <li class="mob-soc__list list">
+                        <a class="mob-soc__link link" href="./" target="_blank" rel="noopener noreferrer nofollow">Facebook</a></li>
+                    <li class="mob-soc__list list">
+                        <a class="mob-soc__link link" href="./" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a></li>        
+                        
                 </ul>
             </div>
         </div>
@@ -139,15 +144,24 @@
                 <h2 class="our-work-title">Чем мы занимаемся</h2>
                 <ul class="our-work-list list">
                     <li class="our-work-item">
-                        <img src="./images/first-page/img.jpg" alt="написание програмного кода" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/first-page/img.jpg 1x, ./images/first-page/img-2x.jpg 2x">
+                            <img src="./images/first-page/img.jpg" alt="написание програмного кода">
+                        </picture>
                         <p class="our-work-text">Десктопные приложения</p>
                     </li>
                     <li class="our-work-item">
-                        <img src="./images/first-page/img_1.jpg" alt="разработка приложений для мобильных устройств" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/first-page/img_1.jpg 1x, ./images/first-page/img_1-2x.jpg 2x">
+                            <img src="./images/first-page/img_1.jpg" alt="разработка приложений для мобильных устройств">
+                        </picture>
                         <p class="our-work-text">Мобильные приложения</p>
                     </li>
                     <li class="our-work-item">
-                        <img src="./images/first-page/img_2.jpg" alt="разработка дизайна при помощи графического планшета" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/first-page/img_2.jpg 1x, ./images/first-page/img_2-2x.jpg 2x">
+                            <img src="./images/first-page/img_2.jpg" alt="разработка дизайна при помощи графического планшета" >
+                        </picture>
                         <p class="our-work-text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -159,7 +173,10 @@
                 <h2 class="teamt-title">Наша команда</h2>
                 <ul class="teamt-list list">
                     <li class="teamt-item">
-                        <img src="./images/first-page/igor_demjanenko.jpg" alt="фото Игорь Демьяненко" width="270" height="260" class="teamt-foto">
+                        <picture>
+                            <source srcset="./images/first-page/igor_demjanenko.jpg 1x, ./images/first-page/igor_demjanenko-2x.jpg 2x">
+                            <img src="./images/first-page/img_1.jpg" alt="разработка приложений для мобильных устройств" class="teamt-foto">
+                        </picture>
                         <h3 class="teamt-name">Игорь Демьяненко</h3>
                         <p class="teamt-profession">Product Designer</p>
                         <div class="team-soc">
@@ -196,7 +213,10 @@
                         </div>
                     </li>
                     <li class="teamt-item">
-                        <img src="./images/first-page/olga_repina.jpg" alt="фото Ольга Репина" width="270" height="260" class="teamt-foto">
+                        <picture>
+                            <source srcset="./images/first-page/olga_repina.jpg 1x, ./images/first-page/olga_repina-2x.jpg 2x">
+                            <img src="./images/first-page/olga_repina.jpg" alt="фото Ольга Репина" class="teamt-foto">
+                        </picture>
                         <h3 class="teamt-name">Ольга Репина</h3>
                         <p class="teamt-profession">Frontend Developer</p>
                         <div class="team-soc">
@@ -233,7 +253,10 @@
                         </div>
                     </li>
                     <li class="teamt-item">
-                        <img src="./images/first-page/nikolay_tarasov.jpg" alt="фото Николай Тарасов" width="270" height="260" class="teamt-foto">
+                        <picture>
+                            <source srcset="./images/first-page/nikolay_tarasov.jpg 1x, ./images/first-page/nikolay_tarasov-2x.jpg 2x">
+                            <img src="./images/first-page/nikolay_tarasov.jpg" alt="фото Николай Тарасов" class="teamt-foto">
+                        </picture>
                         <h3 class="teamt-name">Николай Тарасов</h3>
                         <p class="teamt-profession">Marketing</p>
                         <div class="team-soc">
@@ -270,7 +293,10 @@
                         </div>
                     </li>
                     <li class="teamt-item">
-                        <img src="./images/first-page/mikhail_ermakov.jpg" alt="фото Михаил Ермаков"  width="270" height="260" class="teamt-foto">
+                        <picture>
+                            <source srcset="./images/first-page/mikhail_ermakov.jpg 1x, ./images/first-page/mikhail_ermakov-2x.jpg 2x">
+                            <img src="./images/first-page/mikhail_ermakov.jpg" alt="фото Михаил Ермаков"  class="teamt-foto">
+                        </picture>
                         <h3 class="teamt-name">Михаил Ермаков</h3>
                         <p class="teamt-profession">UI Designer</p>
                         <div class="team-soc">
