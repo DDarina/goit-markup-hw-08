@@ -286,27 +286,27 @@ ul, ol {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/first-page/bgimg-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/bgimg-mob-2x.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/first-page/bgimg-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/bgimg-tab.jpg);
   }
 }
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/first-page/bgimg-tab-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/bgimg-tab-2x.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/first-page/bgimg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/bgimg.jpg);
   }
 }
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/first-page/bgimg-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/first-page/bgimg-2x.jpg);
   }
 }
 .hero .conteiner {
@@ -810,7 +810,6 @@ ul, ol {
 }
 @media only screen and (min-width: 1200px) {
   .regular-customers {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1316,7 +1315,7 @@ ul, ol {
   align-items: center;
   width: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .footer-form__signature {
     align-items: flex-start;
   }
