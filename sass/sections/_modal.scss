@@ -1,3 +1,4 @@
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -12,10 +13,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 93px;
+    overflow-y: auto;
     transform: translate(-50%,-50%) scale(1);
-    max-width: calc(100% - 10px);
-    min-height: 528px;
+    width: calc(100% - 20px);
     background-color: var(--acent-color-background-text);
     transition: transform 250ms; 
     @media only screen and (min-width: 1200px) {
