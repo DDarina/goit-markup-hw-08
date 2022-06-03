@@ -1083,6 +1083,10 @@ ul, ol {
   }
 }
 
+.checkbox-label {
+  display: flex;
+  flex-direction: row;
+}
 .checkbox-label::before {
   content: "";
   position: absolute;
@@ -1107,7 +1111,6 @@ ul, ol {
 }
 
 .contract-text {
-  padding-left: 5px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
