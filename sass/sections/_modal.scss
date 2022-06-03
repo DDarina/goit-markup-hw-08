@@ -1,4 +1,3 @@
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -13,9 +12,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow-y: auto;
     transform: translate(-50%,-50%) scale(1);
-    width: calc(100% - 20px);
+    max-width: calc(100% - 10px);
     background-color: var(--acent-color-background-text);
     transition: transform 250ms; 
     @media only screen and (min-width: 1200px) {
@@ -98,6 +96,8 @@
 } 
 
 .modal-checkbox {
+    display: flex;
+    flex-direction: row;
     position: relative;
     margin-top: 20px;
     &:hover .contract-text {
@@ -106,6 +106,11 @@
     @media only screen and (min-width: 1200px) {
         margin-left: 16px;
     }
+}
+
+.modal-checkbox__text {
+    margin-left: 16px;
+    
 }
 
 
@@ -118,12 +123,10 @@
     border-radius: 3px;
     display: none;
 }
-.modal-checkbox__text {
-    margin-left: 10px;
-}
+
 .contract {
     font-size: 12px;
-    line-height: 1.167;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--acent-color);
@@ -136,7 +139,6 @@
 
 
 .checkbox-label {
-    display: flex;
     &::before {
         content: "";
         position: absolute;
@@ -164,9 +166,10 @@
 
 
 .contract-text {
+    padding-left: 5px;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
     color: var(--first-color-text);
     transition: color 250ms var(--cubic);
     @media only screen and (min-width: 1200px) {
@@ -257,12 +260,12 @@
 
 .comment {
     height: 120px;
-    padding-left: 16px;
     padding-top: 12px;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+

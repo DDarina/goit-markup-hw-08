@@ -10,11 +10,22 @@
         background-color: #ffffff;
         width: 100vw;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
         overflow-y: auto;
         padding-left: 15px;
         padding-top: 24px;
         padding-bottom: 20px;
         background-color: var(--acent-color-background-text);
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+        }
         @media only screen and (min-width: 480px) {
             padding-left: 40px;
             padding-top: 48px;
@@ -24,6 +35,8 @@
         display: none;
     }
 }
+
+
 
 
 .is-hidden {
@@ -108,7 +121,6 @@
     }
 }
 .mob-menu-contact {
-    margin-top: 300px;
     &__item.tel {
         display: inline-block;
         margin-bottom: 32px;

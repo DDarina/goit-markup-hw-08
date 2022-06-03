@@ -1,9 +1,10 @@
 .teamt {
     background-color: var(--background-color-grey);
     padding: 60px 0px;
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1200px) {
         padding: 94px 0px;
     }
+
 }
 
 .teamt .conteiner {
@@ -22,11 +23,15 @@
 
 .teamt-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--second-color-text); 
     margin-bottom: 50px;
+    @media only screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 .teamt-list {
     
@@ -38,13 +43,15 @@
        width: 768px;
         &:nth-child(2n - 1) {
         margin-right: 30px;
-    }
+        }
+        
     @media only screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;
         width: 1200px;
+        margin-bottom: 0px;
     }
-
+    }
 }
 .teamt-name {
     font-weight: 500;
@@ -77,15 +84,27 @@
     }
     @media only screen and (min-width: 768px) {
         width: calc(50% - 30px);
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        
+        &:not(:last-child) {
+            margin-bottom: 0px;
         }
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+        
     }
 
     @media only screen and (min-width: 1200px) {
         width: 1200px;
- 
+        margin-bottom: 0px;
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
     }
+
 }
+
 
 
 .teamt-foto {
