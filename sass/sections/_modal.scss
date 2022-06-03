@@ -141,6 +141,7 @@
 .checkbox-label {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     &::before {
         content: "";
         position: absolute;
