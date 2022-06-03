@@ -98,7 +98,6 @@
 } 
 
 .modal-checkbox {
-    
     position: relative;
     margin-top: 20px;
     &:hover .contract-text {
@@ -109,6 +108,7 @@
     }
 }
 
+
 .checkbox-icon {
     position: absolute;
     left: 0;
@@ -118,7 +118,9 @@
     border-radius: 3px;
     display: none;
 }
-
+.modal-checkbox__text {
+    margin-left: 10px;
+}
 .contract {
     font-size: 12px;
     line-height: 1.167;
@@ -134,6 +136,7 @@
 
 
 .checkbox-label {
+    display: flex;
     &::before {
         content: "";
         position: absolute;
@@ -161,7 +164,6 @@
 
 
 .contract-text {
-    padding-left: 5px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
