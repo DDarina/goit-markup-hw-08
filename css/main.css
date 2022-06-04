@@ -1439,10 +1439,21 @@ ul, ol {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
+  background-color: var(--acent-color-background-text);
+}
+.mob-menu .container {
+  height: 100vh;
   padding-left: 15px;
   padding-top: 24px;
   padding-bottom: 40px;
-  background-color: var(--acent-color-background-text);
+  overflow-y: auto;
+}
+@media only screen and (min-width: 480px) {
+  .mob-menu .container {
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .mob-menu {
