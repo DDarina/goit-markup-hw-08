@@ -18,6 +18,10 @@
         
         background-color: var(--acent-color-background-text);
         .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
             height: 100vh;
             padding-left: 15px;
             padding-top: 24px;
