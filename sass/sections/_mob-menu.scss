@@ -7,30 +7,19 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #ffffff;
-        width: 100vw;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         overflow-y: auto;
+        background-color: #ffffff;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 15px;
+        padding-top: 24px;
+        padding-bottom: 40px;
         background-color: var(--acent-color-background-text);
-        .container {
-            height: 100vh;
-            padding-left: 15px;
-            padding-top: 24px;
-            padding-bottom: 40px;
-            overflow-y: auto;
-        }
-        
-        @media only screen and (min-width: 480px) {
-            .container {
-            padding-left: 40px;
-            padding-top: 48px;
-            padding-bottom: 40px;
-            }
-        }
+    
     @media only screen and (min-width: 768px) {
         display: none;
     }
