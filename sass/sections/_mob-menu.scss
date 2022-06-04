@@ -10,14 +10,7 @@
         background-color: #ffffff;
         width: 100vw;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
         overflow-y: auto;
-        padding-left: 15px;
-        padding-top: 24px;
-        padding-bottom: 20px;
         background-color: var(--acent-color-background-text);
         .container {
             display: flex;
@@ -25,11 +18,16 @@
             justify-content: space-between;
             align-items: flex-start;
             height: 100%;
+            padding-left: 15px;
+            padding-top: 24px;
+            padding-bottom: 20px;
         }
         @media only screen and (min-width: 480px) {
+            .container {
             padding-left: 40px;
             padding-top: 48px;
             padding-bottom: 40px;
+            }
         }
     @media only screen and (min-width: 768px) {
         display: none;
